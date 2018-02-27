@@ -1,0 +1,10 @@
+pi@raspberrypi:~/Desktop/MatrixVoiceTroubleshooting $ dpkg -l | grep matrix
+ii  libmatrixio-creator-hal:armhf         0.2.2                                      armhf        Hardware Abstraction Layer for MATRIX.
+ii  libmatrixio-creator-hal-dev           0.2.2                                      armhf        Hardware Abstraction Layer for MATRIX (headers)
+ii  libmatrixio-malos:armhf               0.1.2                                      armhf        Libraries of MATRIX abstraction layer for MOS
+ii  libmatrixio-protos:armhf              0.1.1                                      armhf        Protocolbuffers for MATRIX abstraction layer
+ii  matrixio-creator-init                 0.4.5                                      armhf        Install scripts that can program the MATRIX Creator FPGA and SAM3 IMU.
+ii  matrixio-malos                        0.3.1                                      armhf        Allows queries to MATRIX Creator hardware via ZMQ.
+ii  matrixio-openocd                      1.0.1                                      armhf        Open on-chip JTAG debug solution for ARM and MIPS systems
+ii  matrixio-protobuf                     3.4.0                                      armhf        Protocol Buffers - Google's data interchange format. (From GRPC 3.4.0)
+ii  matrixio-xc3sprog                     1.1.1                                      armhf        Spartan3, XCF and CPLD JTAG programmer and other utilities.

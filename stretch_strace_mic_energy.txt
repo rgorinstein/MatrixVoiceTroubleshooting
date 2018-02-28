@@ -1,0 +1,298 @@
+pi@raspberrypi:~/matrix-creator-hal/build/demos $ strace ./mic_energy
+execve("./mic_energy", ["./mic_energy"], [/* 41 vars */]) = 0
+brk(NULL)                               = 0x46f000
+uname({sysname="Linux", nodename="raspberrypi", ...}) = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f6c000
+access("/etc/ld.so.preload", R_OK)      = 0
+open("/etc/ld.so.preload", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=42, ...}) = 0
+mmap2(NULL, 42, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x76f6b000
+close(3)                                = 0
+open("/usr/lib/arm-linux-gnueabihf/libarmmem.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\210\5\0\0004\0\0\0"..., 512) = 512
+lseek(3, 20868, SEEK_SET)               = 20868
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1000) = 1000
+lseek(3, 20540, SEEK_SET)               = 20540
+read(3, "A,\0\0\0aeabi\0\1\"\0\0\0\0056\0\6\6\10\1\t\1\n\3\f\1\22\4\24"..., 45) = 45
+fstat64(3, {st_mode=S_IFREG|0644, st_size=21868, ...}) = 0
+mmap2(NULL, 86080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76f29000
+mprotect(0x76f2e000, 61440, PROT_NONE)  = 0
+mmap2(0x76f3d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x76f3d000
+close(3)                                = 0
+munmap(0x76f6b000, 42)                  = 0
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=82739, ...}) = 0
+mmap2(NULL, 82739, PROT_READ, MAP_PRIVATE, 3, 0) = 0x76f14000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0dI\0\0004\0\0\0"..., 512) = 512
+lseek(3, 125740, SEEK_SET)              = 125740
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1560) = 1560
+lseek(3, 90536, SEEK_SET)               = 90536
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0755, st_size=127300, ...}) = 0
+mmap2(NULL, 164432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76eeb000
+mprotect(0x76f01000, 61440, PROT_NONE)  = 0
+mmap2(0x76f10000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x76f10000
+mmap2(0x76f12000, 4688, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76f12000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/libwiringPi.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0x+\0\0004\0\0\0"..., 512) = 512
+lseek(3, 68764, SEEK_SET)               = 68764
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 51505, SEEK_SET)               = 51505
+read(3, "A,\0\0\0aeabi\0\1\"\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 45) = 45
+fstat64(3, {st_mode=S_IFREG|0755, st_size=69844, ...}) = 0
+mmap2(NULL, 120972, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76ecd000
+mprotect(0x76ed9000, 61440, PROT_NONE)  = 0
+mmap2(0x76ee8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x76ee8000
+mmap2(0x76eea000, 2188, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76eea000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/libwiringPiDev.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\f\25\0\0004\0\0\0"..., 512) = 512
+lseek(3, 27100, SEEK_SET)               = 27100
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 19125, SEEK_SET)               = 19125
+read(3, "A,\0\0\0aeabi\0\1\"\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 45) = 45
+fstat64(3, {st_mode=S_IFREG|0755, st_size=28180, ...}) = 0
+mmap2(NULL, 93084, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76eb6000
+mprotect(0x76eba000, 61440, PROT_NONE)  = 0
+mmap2(0x76ec9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x76ec9000
+mmap2(0x76ecb000, 7068, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76ecb000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\20\10\0\0004\0\0\0"..., 512) = 512
+lseek(3, 29156, SEEK_SET)               = 29156
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 28804, SEEK_SET)               = 28804
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=30276, ...}) = 0
+mmap2(NULL, 254300, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76e77000
+mprotect(0x76e7e000, 61440, PROT_NONE)  = 0
+mmap2(0x76e8d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x76e8d000
+mmap2(0x76e8f000, 155996, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76e8f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabihf/libgflags.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\254C\0\0004\0\0\0"..., 512) = 512
+lseek(3, 123956, SEEK_SET)              = 123956
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 123612, SEEK_SET)              = 123612
+read(3, "A,\0\0\0aeabi\0\1\"\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 45) = 45
+fstat64(3, {st_mode=S_IFREG|0644, st_size=125036, ...}) = 0
+mmap2(NULL, 189720, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76e48000
+mprotect(0x76e66000, 61440, PROT_NONE)  = 0
+mmap2(0x76e75000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x76e75000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabihf/libfftw3f.so.3", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\360\1\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1357204, SEEK_SET)             = 1357204
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1040) = 1040
+lseek(3, 1356868, SEEK_SET)             = 1356868
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\3\f\1\22\4\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1358244, ...}) = 0
+mmap2(NULL, 1422872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76cec000
+mprotect(0x76e30000, 61440, PROT_NONE)  = 0
+mmap2(0x76e3f000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x143000) = 0x76e3f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/arm-linux-gnueabihf/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0000\332\6\0004\0\0\0"..., 512) = 512
+lseek(3, 1268340, SEEK_SET)             = 1268340
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1280) = 1280
+lseek(3, 1267740, SEEK_SET)             = 1267740
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=1269620, ...}) = 0
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f6a000
+mmap2(NULL, 1341504, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76ba4000
+mprotect(0x76cd3000, 65536, PROT_NONE)  = 0
+mmap2(0x76ce3000, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12f000) = 0x76ce3000
+mmap2(0x76cea000, 6208, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76cea000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0`=\0\0004\0\0\0"..., 512) = 512
+lseek(3, 451032, SEEK_SET)              = 451032
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1120) = 1120
+lseek(3, 450676, SEEK_SET)              = 450676
+read(3, "A0\0\0\0aeabi\0\1&\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 49) = 49
+fstat64(3, {st_mode=S_IFREG|0644, st_size=452152, ...}) = 0
+mmap2(NULL, 516220, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76b25000
+mprotect(0x76b92000, 65536, PROT_NONE)  = 0
+mmap2(0x76ba2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x76ba2000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\200\321\0\0004\0\0\0"..., 512) = 512
+lseek(3, 115292, SEEK_SET)              = 115292
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1080) = 1080
+lseek(3, 114944, SEEK_SET)              = 114944
+read(3, "A,\0\0\0aeabi\0\1\"\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\24\1\25"..., 45) = 45
+fstat64(3, {st_mode=S_IFREG|0644, st_size=116372, ...}) = 0
+mmap2(NULL, 180536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x76af8000
+mprotect(0x76b14000, 61440, PROT_NONE)  = 0
+mmap2(0x76b23000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0x76b23000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0@h\1\0004\0\0\0"..., 512) = 512
+lseek(3, 1231820, SEEK_SET)             = 1231820
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 2880) = 2880
+lseek(3, 1228284, SEEK_SET)             = 1228284
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1234700, ...}) = 0
+mmap2(NULL, 1303888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x769b9000
+mprotect(0x76ae3000, 61440, PROT_NONE)  = 0
+mmap2(0x76af2000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x129000) = 0x76af2000
+mmap2(0x76af5000, 9552, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x76af5000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/arm-linux-gnueabihf/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0 \27\0\0004\0\0\0"..., 512) = 512
+lseek(3, 25352, SEEK_SET)               = 25352
+read(3, "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1280) = 1280
+lseek(3, 24940, SEEK_SET)               = 24940
+read(3, "A.\0\0\0aeabi\0\1$\0\0\0\0056\0\6\6\10\1\t\1\n\2\22\4\23\1\24"..., 47) = 47
+fstat64(3, {st_mode=S_IFREG|0644, st_size=26632, ...}) = 0
+mmap2(NULL, 90640, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x769a2000
+mprotect(0x769a8000, 61440, PROT_NONE)  = 0
+mmap2(0x769b7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x769b7000
+close(3)                                = 0
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76f68000
+set_tls(0x76f684c0, 0x76f68bb8, 0x76f70050, 0x76f684c0, 0x76f70050) = 0
+mprotect(0x76af2000, 8192, PROT_READ)   = 0
+mprotect(0x76f10000, 4096, PROT_READ)   = 0
+mprotect(0x769b7000, 4096, PROT_READ)   = 0
+mprotect(0x76b23000, 4096, PROT_READ)   = 0
+mprotect(0x76ba2000, 4096, PROT_READ)   = 0
+mprotect(0x76ce3000, 20480, PROT_READ)  = 0
+mprotect(0x76e3f000, 32768, PROT_READ)  = 0
+mprotect(0x76e75000, 4096, PROT_READ)   = 0
+mprotect(0x76e8d000, 4096, PROT_READ)   = 0
+mprotect(0x76ec9000, 4096, PROT_READ)   = 0
+mprotect(0x76ee8000, 4096, PROT_READ)   = 0
+mprotect(0x76f29000, 20480, PROT_READ|PROT_WRITE) = 0
+mprotect(0x76f29000, 20480, PROT_READ|PROT_EXEC) = 0
+cacheflush(0x76f29000, 0x76f2e000, 0, 0x15, 0) = 0
+mprotect(0x76f3d000, 4096, PROT_READ)   = 0
+mprotect(0x2e000, 4096, PROT_READ)      = 0
+mprotect(0x76f6f000, 4096, PROT_READ)   = 0
+munmap(0x76f14000, 82739)               = 0
+set_tid_address(0x76f68068)             = 1112
+set_robust_list(0x76f68070, 12)         = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x76eef2b0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x769e56c0}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x76eef390, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x769e56c0}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+ugetrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM_INFINITY}) = 0
+brk(NULL)                               = 0x46f000
+brk(0x494000)                           = 0x494000
+futex(0x76cea290, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x76cea294, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/dev/spidev0.0", O_RDWR)          = 3
+ioctl(3, SPI_IOC_WR_MODE, 0x7ef8315c)   = 0
+ioctl(3, SPI_IOC_RD_MODE, 0x7ef8315c)   = 0
+ioctl(3, SPI_IOC_WR_BITS_PER_WORD, 0x7ef83160) = 0
+ioctl(3, SPI_IOC_RD_BITS_PER_WORD, 0x7ef83160) = 0
+ioctl(3, SPI_IOC_WR_MAX_SPEED_HZ, 0x7ef83164) = 0
+ioctl(3, SPI_IOC_RD_MAX_SPEED_HZ, 0x7ef83164) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x769e56b0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x769e56b0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_PARENT_SETTID|SIGCHLD, parent_tidptr=0x7ef82f88) = 1113
+wait4(1113, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 1113
+rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x769e56b0}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x769e56b0}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=1113, si_uid=1000, si_status=0, si_utime=0, si_stime=1} ---
+open("/proc/cpuinfo", O_RDONLY)         = 4
+fstat64(4, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(4, "processor\t: 0\nmodel name\t: ARMv7"..., 1024) = 1024
+read(4, "ariant\t: 0x0\nCPU part\t: 0xd03\nCP"..., 1024) = 112
+_llseek(4, 0, [0], SEEK_SET)            = 0
+read(4, "processor\t: 0\nmodel name\t: ARMv7"..., 1024) = 1024
+read(4, "ariant\t: 0x0\nCPU part\t: 0xd03\nCP"..., 1024) = 112
+close(4)                                = 0
+open("/sys/class/gpio/gpio0/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio1/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio2/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio3/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio4/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio5/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio6/value", O_RDWR) = 4
+open("/sys/class/gpio/gpio7/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio8/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio9/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio10/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio11/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio12/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio13/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio14/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio15/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio16/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio17/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio18/value", O_RDWR) = 5
+open("/sys/class/gpio/gpio19/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio20/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio21/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio22/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio23/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio24/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio25/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio26/value", O_RDWR) = 6
+open("/sys/class/gpio/gpio27/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio28/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio29/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio30/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio31/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio32/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio33/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio34/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio35/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio36/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio37/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio38/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio39/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio40/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio41/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio42/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio43/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio44/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio45/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio46/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio47/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio48/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio49/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio50/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio51/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio52/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio53/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio54/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio55/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio56/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio57/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio58/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio59/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio60/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio61/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio62/value", O_RDWR) = -1 ENOENT (No such file or directory)
+open("/sys/class/gpio/gpio63/value", O_RDWR) = -1 ENOENT (No such file or directory)
+clock_gettime(CLOCK_MONOTONIC_RAW, {tv_sec=75, tv_nsec=343320906}) = 0
+ioctl(3, SPI_IOC_MESSAGE(32), 0x7ef83050) = 4
+ioctl(3, SPI_IOC_MESSAGE(32), 0x7ef83050) = 4
+ioctl(3, SPI_IOC_MESSAGE(32), 0x7ef83050) = 4
+ioctl(3, SPI_IOC_MESSAGE(32), 0x7ef83030) = 4
+ioctl(3, SPI_IOC_MESSAGE(32), 0x7ef83030) = 4
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+getpid()                                = 1112
+gettid()                                = 1112
+tgkill(1112, 1112, SIGFPE)              = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGFPE {si_signo=SIGFPE, si_code=SI_TKILL, si_pid=1112, si_uid=1000} ---
++++ killed by SIGFPE +++
+Floating point exception

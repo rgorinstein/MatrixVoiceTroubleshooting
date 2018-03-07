@@ -1,0 +1,44 @@
+pi@raspberrypi:~/matrix-creator-hal/build $ cmake -DCMAKE_BUILD_TYPE=Debug ..
+-- * * * A D M O B I L I Z E * * *
+-- Admobilize: Please treat warnings as errors. Use: -DADM_FATAL_WARNINGS=ON
+-- * * * * * * * * * * * * * * * *
+-- * * * A D M O B I L I Z E * * *
+-- Admobilize: Please treat warnings as errors. Use: -DADM_FATAL_WARNINGS=ON
+-- * * * * * * * * * * * * * * * *
+-- gflags found =>/usr/lib/arm-linux-gnueabihf/libgflags.so
+-- * * * A D M O B I L I Z E * * *
+-- Admobilize: Please treat warnings as errors. Use: -DADM_FATAL_WARNINGS=ON
+-- * * * * * * * * * * * * * * * *
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/matrix-creator-hal/build
+pi@raspberrypi:~/matrix-creator-hal/build $ gdb ./demos/mic_energy
+GNU gdb (Raspbian 7.12-6) 7.12.0.20161007-git
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "arm-linux-gnueabihf".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./demos/mic_energy...(no debugging symbols found)...done.
+(gdb) run
+Starting program: /home/pi/matrix-creator-hal/build/demos/mic_energy
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/arm-linux-gnueabihf/libthread_db.so.1".
+
+Program received signal SIGFPE, Arithmetic exception.
+raise (sig=<optimized out>) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+(gdb) bt
+#0  raise (sig=<optimized out>) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0x76b7d1fc in __aeabi_ldiv0 () from /lib/arm-linux-gnueabihf/libgcc_s.so.1
+#2  0x76fa3928 in matrix_hal::MicrophoneArray::ReadConfValues() () from /home/pi/matrix-creator-hal/build/demos/driver/libmatrix_creator_hal.so
+#3  0x000130b0 in main ()
+(gdb)
